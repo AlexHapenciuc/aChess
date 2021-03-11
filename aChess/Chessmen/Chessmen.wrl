@@ -1,0 +1,149 @@
+#VRML V2.0 utf8
+
+#WHITE PAWNS
+DEF WHITE_PAWN Transform {
+  translation 0 1 -2
+  children [ Inline { url "WhitePawn.wrl" } ]
+}
+Transform {
+  translation 2 0 0
+  children [ USE WHITE_PAWN ]
+}
+Transform {
+  translation 4 0 0
+  children [ USE WHITE_PAWN ]
+}
+Transform {
+  translation 6 0 0
+  children [ USE WHITE_PAWN ]
+}
+Transform {
+  translation 8 0 0
+  children [ USE WHITE_PAWN ]
+}
+Transform {
+  translation 10 0 0
+  children [ USE WHITE_PAWN ]
+}
+Transform {
+  translation 12 0 0
+  children [ USE WHITE_PAWN ]
+}
+Transform {
+  translation 14 0 0
+  children [ USE WHITE_PAWN ]
+}
+
+#BLACK PAWNS
+DEF BLACK_PAWN Transform {
+  translation 0 1 -12
+  children [ Inline { url "BlackPawn.wrl" } ]
+}
+Transform {
+  translation 2 0 0
+  children [ USE BLACK_PAWN ]
+}
+Transform {
+  translation 4 0 0
+  children [ USE BLACK_PAWN ]
+}
+Transform {
+  translation 6 0 0
+  children [ USE BLACK_PAWN ]
+}
+Transform {
+  translation 8 0 0
+  children [ USE BLACK_PAWN ]
+}
+Transform {
+  translation 10 0 0
+  children [ USE BLACK_PAWN ]
+}
+Transform {
+  translation 12 0 0
+  children [ USE BLACK_PAWN ]
+}
+Transform {
+  translation 14 0 0
+  children [ USE BLACK_PAWN ]
+}
+
+#WHITE ROOKS
+DEF WHITE_ROOK Transform {
+  translation 0 1 0
+  children [ Inline { url "WhiteRook.wrl" } ]
+}
+Transform {
+  translation 14 0 0
+  children [ USE WHITE_ROOK ]
+}
+
+#BLACK ROOKS
+DEF BLACK_ROOK Transform {
+  translation 0 1 -14
+  children [ Inline { url "BlackRook.wrl" } ]
+}
+Transform {
+  translation 14 0 0
+  children [ USE BLACK_ROOK ]
+}
+
+#WHITE KNIGHTS
+DEF WHITE_KNIGHT Transform {
+  translation 2 1 0
+  children [ Inline { url "WhiteKnight.wrl" } ]
+}
+Transform {
+  translation 10 0 0
+  children [ USE WHITE_KNIGHT ]
+}
+
+#BLACK KNIGHTS
+DEF BLACK_KNIGHT Transform {
+  translation 2 1 -14
+  children [ Inline { url "BlackKnight.wrl" } ]
+}
+Transform {
+  translation 10 0 0
+  children [ USE BLACK_KNIGHT ]
+}
+
+#WHITE BISHOPS
+DEF WHITE_BISHOP Transform {
+  translation 4 1 0
+  children [ Inline { url "WhiteBishop.wrl" } ]
+}
+Transform {
+  translation 6 0 0
+  children [ USE WHITE_BISHOP ]
+}
+
+#BLACK BISHOPS
+DEF BLACK_BISHOP Transform {
+  translation 4 1 -14
+  children [ Inline { url "BlackBishop.wrl" } ]
+}
+Transform {
+  translation 6 0 0
+  children [ USE BLACK_BISHOP ]
+}
+
+#WHITE CROWN
+Transform {
+  translation 6 1 0
+  children [ Inline { url "WhiteKing.wrl" } ]
+}
+Transform {
+  translation 8 1 0
+  children [ Inline { url "WhiteQueen.wrl" } ]
+}
+
+#BLACK CROWN
+Transform {
+  translation 6 1 -14
+  children [ Inline { url "BlackKing.wrl" } ]
+}
+Transform {
+  translation 8 1 -14
+  children [ Inline { url "BlackQueen.wrl" } ]
+}

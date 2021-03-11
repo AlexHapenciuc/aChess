@@ -1,0 +1,115 @@
+#VRML V2.0 utf8
+
+DEF TILES_ROW1 Group {
+	children [
+		Transform {
+			translation	0 0 0
+			children [
+				Transform {
+					translation	 0 0 0
+					children [
+						DEF WHITE_TILE Shape {
+							appearance Appearance { material Material { diffuseColor 1 1 1 } }
+							geometry Box { size	1 1 0.1 }
+						}
+					]
+				}
+				Transform {
+					translation	1 0 0
+					children [
+						DEF BLACK_TILE Shape {
+							appearance Appearance { material Material { diffuseColor 0 0 0 } }
+							geometry Box { size	1 1 0.1 }
+						}
+					]
+				}
+				Transform {
+					translation 2 0 0
+					children USE WHITE_TILE
+				}
+				Transform {
+					translation 3 0 0
+					children USE BLACK_TILE
+				}
+				Transform {
+					translation 4 0 0
+					children USE WHITE_TILE
+				}
+				Transform {
+					translation 5 0 0
+					children USE BLACK_TILE
+				}
+				Transform {
+					translation 6 0 0
+					children USE WHITE_TILE
+				}
+				Transform {
+					translation 7 0 0
+					children USE BLACK_TILE
+				}
+			]
+		}
+	]
+}
+
+DEF TILES_ROW2 Group {
+	children [
+		Transform {
+			translation	0 1 0
+			children [
+				Transform {
+					translation 1 0 0
+					children USE WHITE_TILE
+				}
+				Transform {
+					translation 0 0 0
+					children USE BLACK_TILE
+				}
+				Transform {
+					translation 3 0 0
+					children USE WHITE_TILE
+				}
+				Transform {
+					translation 2 0 0
+					children USE BLACK_TILE
+				}
+				Transform {
+					translation 5 0 0
+					children USE WHITE_TILE
+				}
+				Transform {
+					translation 4 0 0
+					children USE BLACK_TILE
+				}
+				Transform {
+					translation 7 0 0
+					children USE WHITE_TILE
+				}
+				Transform {
+					translation 6 0 0
+					children USE BLACK_TILE
+				}
+			]
+		}
+	]
+}
+
+Transform {
+	translation 0 2 0
+	children [ USE TILES_ROW1 ]
+}
+
+Transform {
+	translation 0 2 0
+	children [ USE TILES_ROW2 ]
+}
+
+Transform {
+	translation 0 4 0
+	children [ USE TILES_ROW1 ]
+}
+
+Transform {
+	translation 0 4 0
+	children [ USE TILES_ROW2 ]
+}
